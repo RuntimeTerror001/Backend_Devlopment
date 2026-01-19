@@ -1,0 +1,7 @@
+protocols - rules
+anything you want to do on internet requires following rules created by people who created internet
+these rules are to be followed so they are preinstalled in the software of your os
+
+http : protocol
+protocol or rule without following it you cannot send or recieve data on internet
+

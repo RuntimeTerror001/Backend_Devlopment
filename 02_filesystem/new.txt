@@ -1,0 +1,26 @@
+programming language X
+technology X
+Framework X
+Library X
+
+It is JS runtime environment.
+
+story -
+js backend nhi ban skta
+kyunki js ke pass wo functionalities nhih jise backend create hota h
+ryan dahl thought js se backend banna chaiye
+google chrome v8 engine code open source and ryan dahl us code mein chedkani kr rha hota
+kyunki chrome v8  engine bana h c++ mein
+fir he thought ki we have to code in js
+ryan dahl wraps v8 engine code with js
+we'll write js code and give to the js layer which will send it to v8 engine's c++ modules and then server is created
+this whole structure is called nodejs.
+
+
+nodejs is a js runtime environment
+
+
+npm init - we created package.json - which is the lekha jokha oof the project
+
+
+
