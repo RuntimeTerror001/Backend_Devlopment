@@ -1,0 +1,22 @@
+express.js framework
+
+express.js is a npm package
+framework -> is a flow which says we have to do this thing like this only
+express js manages everything from reciving the request and giving the response
+from accepting a req at a server to everything is express.js
+
+youtube.com/profile
+the part except domain is called route here for example after youtube.com
+
+
+nodemon  filename  - running like this can make the site run live with live changes
+node filename - you have to end then restart for changes
+
+
+middleware -> 
+
+
+you send a req from laptop to facebook it goes to facebook server handles routes and then responds .... this is how it goes but it will not 
+there will be a middleware before routes 
+in middleware we can do any work
+for eg: if we want first req come then print hello then go to routes.
