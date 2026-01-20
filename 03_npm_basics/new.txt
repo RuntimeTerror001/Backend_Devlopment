@@ -1,0 +1,23 @@
+npm - node package manager
+
+node js core me whatever is installed is module and what we install using npm is package
+
+installing -> npm i packageName
+uninstall -> npm uninstall packageName
+
+installing particular version -> npm i packageName@version
+
+
+dependencies -> packages and packages ki dependencies
+devdependecies -> aise packages jo sirf development me kaam ayenge but when app deployed then those packages will not be used
+
+
+scripts -> when you run a script
+npm start
+npm run dev
+npm run concurrent
+
+npm start and npm test are known by the os already when node is installed start & test words are stored there
+anything apart from start & test we use run before it . 
+eg: npm run dev -> WORK
+npm dev -> NOT WORK
