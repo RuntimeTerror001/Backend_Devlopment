@@ -1,0 +1,41 @@
+form handling and working with forms
+handle backend process of forms and making sure the data coming form any frontend lib,fw, templating engines, we still handle it at the backend
+
+
+we can put any data on frontend on browser and whenever you request anything on backend that frontend saved data will automatically go to backend
+ 
+session cookie
+
+ek person and a facebook server
+-----
+so person asks facebook server for a photo
+server asks person who are you
+person logins
+server gives photo ok you are peter
+peter likes a photoserver fter giving photo forgot who is peter and asks again who are you
+peter again logins
+
+
+to solve this
+---
+server sends photo with a string eg abcd which is stored in web browser
+next whenever you do or ask something you send it with this string so server knows you are peter
+without that server asks who are you
+this string stored on frontend is called cookie
+this connection b/w person and server through cookie is called session
+if we remove this string from frontend then you logout session terminated.
+this cookie is mainly used for authentication
+
+
+
+so if you write your name eg: aahaan on a google form 
+that name is converted to blob - unreadable on screen , in hexadecimmal  and sent to server
+this blob is a mixture of every data very mixed up - raita bangya h to be sent to server
+not readable directly
+to handle this ki blob ko readable krna hoga so server reads it
+to do that we use
+app.use(express.json());
+app.use(express.urlencoded({extended: true}))
+this blob is not correct way to address it
+
+
