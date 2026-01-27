@@ -1,0 +1,29 @@
+initialize a project with npm
+express install
+
+ejs is just like html but you can perform dyankic stuff in it.
+<h1>2+2</h1>   - this will not work in html but if you write this in ejs and tell this we have to calculate it will do and write 4.
+
+install ejs from npm
+setup ejs as a view engine
+
+
+setting up public static files
+static files are images, videos and frontend's vanilla js to search all this go to public folder
+_dirname - gives path till current folder
+_dirname+'/public' add public to path
+
+
+dynamic routing
+we often see routes in which only one part changes
+/author/aahaan
+/author/ironman
+/author/spiderman
+this requires a lot of route creating that's where dynamic routing comes to solve this
+
+
+go to browser
+put url and enter
+now create that url route
+res bhejiye kuch bhejiye
+to make this url dynamic realise which part is dynamic and us part me route me : lagado
