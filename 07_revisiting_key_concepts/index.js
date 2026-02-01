@@ -17,14 +17,40 @@ app.get('/', function(req,res) {
 
  app.get('/file/:filename', function(req,res) {
     fs.readFile(`./files/${req.params.filename}`, "utf-8", function(err, filedata){
-      res.render('show', {filename: req.params.filename, file:filedata , filedata: req.params.filedata});
+      res.render('show', {filename: req.params.filename, file:filedata , filedata:filedata});
       })
    });
+ 
+app.get('/edit/:filename', (req, res) => {
+  res.render("edit", {
+    filename: req.params.filename
+  });
+});
+
+app.post('/edit',function(req,res){
+ fs.rename(`./files/${req.body.previous}`,`./files/${req.body.new}`
+   ,function(err){
+      if(err) console.log(err);
+      res.redirect("./");
+ });
+  });
+
+
+ 
 
 app.post('/create', function(req,res) {
-fs.writeFile(`./files/${req.body.title.split(' ').join('_')}.txt`, req.body.details,function(err){
-res.redirect("/")
+  if (!req.body.title) {
+    return res.redirect("/");
+  }
+
+  fs.writeFile(
+    `./files/${req.body.title.split(' ').join('_')}.txt`,
+    req.body.details,
+    function(err){
+      res.redirect("/")
+    }
+  );
 });
-   })
+
 
 app.listen(3000);
