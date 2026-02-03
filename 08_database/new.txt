@@ -24,4 +24,7 @@ model create -> collection
 CREATE code    -> document
 
 
+All mongoose related code is asynchronous so we use async await.
+
+
 
