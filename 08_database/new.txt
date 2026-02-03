@@ -1,0 +1,27 @@
+Data storage:
+a plac ewhere we can store the info for all users
+file - data.txt
+but this file can only save text not music , images etc. then we go for 
+Database - 
+2 TYPES = 
+SQL and NoSQL 
+
+SQL- storing data in a roop - tables 
+NoSQL - storing data in a roop - object 
+eg: mongoDB
+
+TERMINOLOGIES
+---------
+backend has two servers - application server and database server
+application server handles routes , does everything except data
+
+
+Database -> Collections -> Document 
+COde ----
+
+mongoose.connect -> database create
+model create -> collection 
+CREATE code    -> document
+
+
+
