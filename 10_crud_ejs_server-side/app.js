@@ -14,4 +14,12 @@ app.get("/",(req,res) => {
     res.render("index");
 })
 
+app.get("/read",(req,res) => {
+    res.render("read");
+})
+
+app.post("/create",(req,res) => {
+ 
+})
+
 app.listen(3000);
