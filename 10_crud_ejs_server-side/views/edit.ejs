@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update User</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body class="min-h-screen bg-zinc-900 flex items-center justify-center text-white">
+    <div class="w-full max-w-sm bg-zinc-950 p-6 rounded-xl border border-zinc-800">
+
+      <div class="nav mb-10">
+        <a class="text-blue-500" href="/read">→ read</a>
+      </div>
+
+      <h1 class="text-2xl font-semibold mb-6 text-center">
+        Update User
+      </h1>
+
+      <form action="/update/<%= user._id %>" method="post" class="flex flex-col gap-4">
+
+        <!-- REQUIRED: user id -->
+        <input type="hidden" name="id" value="<%= user._id %>" />
+
+        <input
+          type="text"
+          name="name"
+          value="<%= user.name %>"
+          placeholder="Name"
+          class="px-4 py-2 bg-transparent border-2 border-zinc-800 rounded-lg outline-none
+                 focus:border-white placeholder-zinc-500"
+        />
+
+        <input
+          type="email"
+          name="email"
+          value="<%= user.email %>"
+          placeholder="Email"
+          class="px-4 py-2 bg-transparent border-2 border-zinc-800 rounded-lg outline-none
+                 focus:border-white placeholder-zinc-500"
+        />
+
+        <input
+          type="text"
+          name="image"
+          value="<%= user.image %>"
+          placeholder="Image URL"
+          class="px-4 py-2 bg-transparent border-2 border-zinc-800 rounded-lg outline-none
+                 focus:border-white placeholder-zinc-500"
+        />
+
+        <button
+          class="mt-2 py-2 rounded-lg bg-white text-black font-medium
+                 hover:bg-zinc-200 transition"
+        >
+          Update
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
